@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .img {
+            padding: 20px;
+            margin-top: 40px;
+            margin-left: 100px;
+            margin-right: 10px;
+            
+        }
+
+        .img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            animation-name: jyoti;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            border-color: 2px solid red;
+        
+        }
+
+        @keyframes jyoti {
+            from {
+                width: 50px;
+                height: 50px;
+            }
+            to {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+        .container{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .text{
+            
+            position: relative;
+            width: 90%;
+            text-align: center;
+            font-size: 24px;
+            animation: scrolldown 10s linear infinite;
+            text-align: right;
+           
+        }
+       
+        @keyframes scrolldown {
+            0%{
+                top: -100%;
+            }
+            100%{
+                bottom:  100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="Param-sundari-release.jpg" alt="Animated Image">
+    </div>
+
+<div class="container">
+        <div class="text">
+            <h1 style="color: red; font-style: oblique;">Param Sundari</h1>
+            <p style="color: blue; font-style: inherit;">Two hearts collide as a North and South Indian <br>
+                unexpectedly fall for each other. 
+                <br> Their diverse backgrounds ignite a comedic and tumultuous love story,<br>
+                 brimming with cultural <br>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
